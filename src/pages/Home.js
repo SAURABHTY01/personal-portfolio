@@ -9,11 +9,11 @@ const Home = () => {
       <ParticlesBackground />
       <div className="home-content">
         <div className="social-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-github"></i>
+          <i className="fa-brands fa-facebook-f"></i>
+          <i className="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-x-twitter"></i>
+          <i className="fa-brands fa-github"></i>
         </div>
         <div className="content">
           <h2>Hello,</h2>
@@ -34,7 +34,7 @@ const Home = () => {
               Download CV
             </button>
             <button>
-              <i class="fa-solid fa-arrow-right"></i>View Projects
+              <i className="fa-solid fa-arrow-right"></i>View Projects
             </button>
           </div>
         </div>
