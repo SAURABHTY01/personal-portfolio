@@ -27,7 +27,7 @@ const Home = () => {
               onMouseLeave={() => setIsHover(false)}
             >
               <i
-                class={`fa-solid  ${
+                className={`fa-solid  ${
                   isHover ? "fa-arrow-down anim-updown" : "fa-arrow-right"
                 }`}
               ></i>
