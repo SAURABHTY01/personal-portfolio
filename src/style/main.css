@@ -222,13 +222,15 @@
     padding: 0 !important;
     margin: 0 40px !important;
   
-    overflow: hidden !important;
+   
   }
 
   .timeline {
-    
-    max-width: 650px !important;
-    overflow: hidden !important;
+    padding: 0;
+    margin: 0 10px !important;
+    max-width: 650px ;
+    overflow-y: scroll ;
+    overflow-x: hidden;
   }
 }
 
