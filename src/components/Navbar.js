@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../style/navbar.css";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const TOP_OFFSET = 50;
