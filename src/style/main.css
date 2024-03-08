@@ -221,7 +221,7 @@
     padding: 0 !important;
     margin: 0 40px !important;
     max-width: 350px !important;
-    overflow: hidden;
+    overflow-y: hidden !important;
   }
 }
 
