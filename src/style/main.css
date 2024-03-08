@@ -220,8 +220,13 @@
   .vertical-timeline  {
     padding: 0 !important;
     margin: 0 40px !important;
+  
+    overflow: hidden !important;
+  }
+
+  .timeline {
     max-width: 350px !important;
-    overflow-y: hidden !important;
+    overflow: hidden !important;
   }
 }
 
