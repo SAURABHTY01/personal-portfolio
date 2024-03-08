@@ -163,6 +163,7 @@
 
 /* Tablet Media Query */
 @media only screen and (max-width: 768px) {
+ 
   .home-section {
     flex-direction: column;
     align-items: center;
@@ -225,7 +226,8 @@
   }
 
   .timeline {
-    max-width: 350px !important;
+    
+    max-width: 650px !important;
     overflow: hidden !important;
   }
 }
