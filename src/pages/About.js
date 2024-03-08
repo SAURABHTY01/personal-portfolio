@@ -19,7 +19,7 @@ const About = () => {
           provident necessitatibus reiciendis corrupti!
         </p>
         <div class="data">
-          <a href="#" class="hire">
+          <a href="hire" class="hire">
             Hire Me
           </a>
         </div>
