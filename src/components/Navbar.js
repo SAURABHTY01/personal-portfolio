@@ -27,13 +27,13 @@ const Navbar = () => {
     <nav className={`navbar ${showBackground ? 'navbar-onscroll' : ''}`}>
       <ul className="nav-list">
         <li className={`nav-item ${navItem === "home" ? "active" : ""}`}>
-          <a to="/" className="nav-link" onClick={() => setNavItem("home")}>
+          <a href="/" className="nav-link" onClick={() => setNavItem("home")}>
             Home
           </a>
         </li>
         <li className={`nav-item ${navItem === "about" ? "active" : ""}`}>
           <a
-            to="about"
+            href="about"
             className="nav-link"
             onClick={() => setNavItem("about")}
           >
@@ -42,7 +42,7 @@ const Navbar = () => {
         </li>
         <li className={`nav-item ${navItem === "experience" ? "active" : ""}`}>
           <a
-            to="experience"
+            href="experience"
             className="nav-link"
             onClick={() => setNavItem("experience")}
           >
@@ -51,7 +51,7 @@ const Navbar = () => {
         </li>
         <li className={`nav-item ${navItem === "projects" ? "active" : ""}`}>
           <a
-            to="projects"
+            href="projects"
             className="nav-link"
             onClick={() => setNavItem("projects")}
           >
@@ -60,7 +60,7 @@ const Navbar = () => {
         </li>
         <li className={`nav-item ${navItem === "contact" ? "active" : ""}`}>
           <a
-            to="contact"
+            href="contact"
             className="nav-link"
             onClick={() => setNavItem("contact")}
           >
