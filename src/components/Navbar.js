@@ -1,20 +1,76 @@
-import React, { useState } from 'react'
-import '../style/navbar.css'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import "../style/navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [navItem, setNavItem] = useState('home')
-  return (
-    <nav className="navbar">
-        <ul className='nav-list'>
-            <li className={`nav-item ${navItem === 'home' ? 'active' : ''}`}><Link to="" className="nav-link" onClick={() => setNavItem('home')}>Home</Link></li>
-            <li className={`nav-item ${navItem === 'about' ? 'active' : ''}`}><Link to="about" className="nav-link" onClick={() => setNavItem('about')}>About</Link></li>
-            <li className={`nav-item ${navItem === 'experience' ? 'active' : ''}`}><Link to="" className="nav-link" onClick={() => setNavItem('experience')}>Experience</Link></li>
-            <li className={`nav-item ${navItem === 'projects' ? 'active' : ''}`}><Link to="" className="nav-link" onClick={() => setNavItem('projects')}>Projects</Link></li>
-            <li className={`nav-item ${navItem === 'contact' ? 'active' : ''}`}><Link to="" className="nav-link" onClick={() => setNavItem('contact')}>Contact</Link></li>
-        </ul>
-    </nav>
-  )
-}
+  const TOP_OFFSET = 50;
+  const [navItem, setNavItem] = useState("home");
 
-export default Navbar
+  const [showBackground, setShowBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      if (window.scrollY >= TOP_OFFSET) {
+        setShowBackground(true);
+      } else {
+        setShowBackground(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  return (
+    <nav className={`navbar ${showBackground ? 'navbar-onscroll' : ''}`}>
+      <ul className="nav-list">
+        <li className={`nav-item ${navItem === "home" ? "active" : ""}`}>
+          <a to="/" className="nav-link" onClick={() => setNavItem("home")}>
+            Home
+          </a>
+        </li>
+        <li className={`nav-item ${navItem === "about" ? "active" : ""}`}>
+          <a
+            to="about"
+            className="nav-link"
+            onClick={() => setNavItem("about")}
+          >
+            About
+          </a>
+        </li>
+        <li className={`nav-item ${navItem === "experience" ? "active" : ""}`}>
+          <a
+            to="experience"
+            className="nav-link"
+            onClick={() => setNavItem("experience")}
+          >
+            Experience
+          </a>
+        </li>
+        <li className={`nav-item ${navItem === "projects" ? "active" : ""}`}>
+          <a
+            to="projects"
+            className="nav-link"
+            onClick={() => setNavItem("projects")}
+          >
+            Projects
+          </a>
+        </li>
+        <li className={`nav-item ${navItem === "contact" ? "active" : ""}`}>
+          <a
+            to="contact"
+            className="nav-link"
+            onClick={() => setNavItem("contact")}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
