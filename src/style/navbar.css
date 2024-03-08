@@ -1,65 +1,70 @@
 .navbar {
-    position: fixed;
-    top: 20px; /* Adjust the margin from the top as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 710px;
-    height: 60px;
-    /* background-color: #e56b6f; */
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50em;
-    display: flex;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    z-index: 9999;
+  position: fixed;
+  top: 20px; /* Adjust the margin from the top as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 710px;
+  height: 60px;
+  /* background-color: #e56b6f; */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50em;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 9999;
 }
 
 .navbar-onscroll {
-    background-color: #001220;
+  background-color: #001220;
 }
 
 .nav-list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-bottom: 1px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1px;
 }
 
 .nav-item {
-    width: 130px;
-    padding: 10px;
-    text-align: center;
-    list-style: none;
-    border-radius: 50em;
-    position: relative;
-    overflow: hidden;
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+  border-radius: 50em;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-item.active {
-    background-color: #eaac8b;
+  background-color: #eaac8b;
 }
 
 .nav-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #FF6868;
-    transition: transform 0.5s ease;
-  }
-  
-  .nav-item:hover::before {
-    transform: translateX(100%);
-  }
-  
-  .nav-link {
-    width: 100%;
-    text-decoration: none;
-    color: #fff;
-    position: relative;
-    z-index: 1 !important;
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6868;
+  transition: transform 0.5s ease;
+}
 
+.nav-item:hover::before {
+  transform: translateX(100%);
+}
+
+.nav-link {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  z-index: 1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    left: 35%;
+  }
+}

@@ -1,11 +1,13 @@
 .main {
   min-height: 100vh;
   height: 100vh;
+  width: 100%;
   position: relative;
   background-color: #001220;
 }
 
 .section {
+  width: 100%;
   height: 100%;
 }
 
@@ -94,7 +96,7 @@
 }
 
 .anim-updown {
-    animation: upDown 1s ease-in-out infinite alternate;
+  animation: upDown 1s ease-in-out infinite alternate;
 }
 
 .social-icons .fa-brands:hover {
@@ -150,14 +152,101 @@
 }
 
 @keyframes upDown {
-    from {
-      transform: translateY(-5px);
-    }
-  
-    to {
-      transform: translateY(5px);
-    }
+  from {
+    transform: translateY(-5px);
   }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+/* Tablet Media Query */
+@media only screen and (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .home-content {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .content {
+    width: 80%;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    margin-bottom: 4rem;
+    margin-left: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2.5rem;
+  }
+
+  .profile-img {
+    order: -1; /* Move the profile image to the top */
+  }
+
+  .profile-image {
+    width: 300px !important; /* Adjust the width for better responsiveness */
+    height: 300px !important; /* Adjust the height for better responsiveness */
+  }
+
+  .buttons button {
+    width: 100%; /* Make buttons full width on tablets */
+  }
+
+  .about {
+    padding: 3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .exp-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical-timeline  {
+    padding: 0 !important;
+    margin: 0 40px !important;
+    max-width: 500px !important;
+  }
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 480px) {
+  .home-content {
+    padding: 2rem;
+  }
+
+  .social-icons {
+    margin-top: 1.5rem;
+  }
+
+  .buttons button {
+    font-size: 0.9rem; /* Adjust button font size for better fit on smaller screens */
+  }
+
+  .profile-img {
+    order: -1; /* Move the profile image to the top */
+  }
+
+  .profile-image {
+    width: 250px; /* Adjust the width for better responsiveness */
+    height: 250px; /* Adjust the height for better responsiveness */
+  }
+}
 
 /* @keyframes pulse {
     0% { box-shadow:0 0 8px #FF6868, inset 0 0 8px #FF6868; }
@@ -206,104 +295,106 @@
   height: 100%;
 }
 
-.pic{
-    height: 400px;
-    width:  300px;
-    border-radius: 20px;
-  }
-  .about{
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    background: #fff;
-  }
-  .text{
-    width: 540px;
-  }
-  .text h2{
-    font-size: 90px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  .text h5{
-    font-size: 22px;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  span{
-    color: #4070f4;
-  }
-  .text p{
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 1px;
-  }
-  .data{
-    margin-top: 30px;
-  }
-  .hire{
-    font-size: 18px;
-    background: #4070f4;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    padding: 8px 25px;
-    border-radius: 6px;
-    transition: 0.5s;
-  }
-  .hire:hover{
-    background: #000;
-    border: 1px solid #4070f4;
-  }
+.pic {
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+}
+.about {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  background: #fff;
+}
+.text {
+  width: 540px;
+}
+.text h2 {
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span {
+  color: #4070f4;
+}
+.text p {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data {
+  margin-top: 30px;
+}
+.hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover {
+  background: #000;
+  border: 1px solid #4070f4;
+}
 
-  .exp-section {
-    width: 100%;
-    max-width: 100%;
-   position: relative;
-    background: #EEEDEB;
-    text-align: center;
-  }
+.exp-section {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  background: #eeedeb;
+}
 
-  .exp-section h1 {
-    padding-top: 100px;
-    margin-bottom: 60px;
-    text-align: center;
-    font-size: 90px;
-    font-weight: 600;
-    
-  }
+.exp-section h1 {
+  padding-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 600;
+}
 
-  .exp-section h1:after {
-    content: " ";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    height: 1em;
-    width: 15%;
-    border-bottom: 5px solid;
-    margin-top: 1.2rem;
-  }
+.exp-section h1:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  height: 1em;
+  width: 15%;
+  border-bottom: 5px solid;
+  margin-top: 1.2rem;
+}
 
-  .vertical-timeline::before {
-    /* this is the vertical line */
-    background: #fff !important;
-  }
-  
-  .empty {
-    height: 600px;
-    border: 1px solid red;
-  }
+.vertical-timeline::before {
+  /* this is the vertical line */
+  background: #fff !important;
+}
 
-  .timeline {
-   padding: 0 100px;
-  }
+.empty {
+  height: 600px;
+  border: 1px solid red;
+}
 
-  .custom-timeline:before {
-    background-color: #d46600; /* Change this to the desired color for connecting lines */
-  }
+.timeline {
+  padding: 0 100px;
+  width: 1100px;
+  height: 600px;
+  overflow-y: auto;
+  margin: 0 auto;
+}
+
+.custom-timeline:before {
+  background-color: #d46600; /* Change this to the desired color for connecting lines */
+}
