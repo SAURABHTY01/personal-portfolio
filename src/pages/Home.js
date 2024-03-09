@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProfilePic from "../assets/profile-pic.png";
 import ParticlesBackground from "../components/ParticlesBackground";
+import { FaAnglesRight, FaAnglesDown, FaFacebookF, FaLinkedinIn, FaInstagram, FaXTwitter, FaGithub } from "react-icons/fa6";
 
 const Home = () => {
   const [isHover, setIsHover] = useState(false);
@@ -9,11 +10,11 @@ const Home = () => {
       <ParticlesBackground />
       <div className="home-content">
         <div className="social-icons">
-          <i className="fa-brands fa-facebook-f"></i>
-          <i className="fa-brands fa-linkedin-in"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-x-twitter"></i>
-          <i className="fa-brands fa-github"></i>
+          <FaFacebookF className="fa-brands"/>
+          <FaLinkedinIn className="fa-brands"/>
+          <FaInstagram className="fa-brands"/>
+          <FaXTwitter className="fa-brands"/>
+          <FaGithub className="fa-brands"/>
         </div>
         <div className="content">
           <h2>Hello,</h2>
@@ -26,15 +27,11 @@ const Home = () => {
               onMouseEnter={() => setIsHover("true")}
               onMouseLeave={() => setIsHover(false)}
             >
-              <i
-                className={`fa-solid  ${
-                  isHover ? "fa-arrow-down anim-updown" : "fa-arrow-right"
-                }`}
-              ></i>
+              {isHover ? <FaAnglesDown  className="anim-updown"/> : <FaAnglesRight className="anim-leftRight"/>}
               Download CV
             </button>
             <button>
-              <i className="fa-solid fa-arrow-right"></i>View Projects
+            <FaAnglesRight className="anim-leftRight"/>View Projects
             </button>
           </div>
         </div>

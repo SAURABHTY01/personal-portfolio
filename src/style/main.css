@@ -96,7 +96,13 @@
 }
 
 .anim-updown {
+  margin-right: 1rem;
   animation: upDown 1s ease-in-out infinite alternate;
+}
+
+.anim-leftRight {
+  margin-right: 1rem;
+  animation: leftRight 1s ease-in-out infinite alternate;
 }
 
 .social-icons .fa-brands:hover {
