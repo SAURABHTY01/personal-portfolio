@@ -539,6 +539,10 @@
 //   }
 
 const particleConfig = {
+    fullScreen: {
+        enable: false,
+        zIndex: 0
+      },
     background: {
         color: {
             value: "#001220",
