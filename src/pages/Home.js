@@ -12,9 +12,9 @@ const Home = () => {
         <div className="social-icons">
           <FaFacebookF className="fa-brands"/>
           <FaLinkedinIn className="fa-brands"/>
-          <FaInstagram className="fa-brands"/>
           <FaXTwitter className="fa-brands"/>
           <FaGithub className="fa-brands"/>
+          <FaInstagram className="fa-brands"/>
         </div>
         <div className="content">
           <h2>Hello,</h2>
