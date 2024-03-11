@@ -21,10 +21,10 @@ const Navbar = () => {
       
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, true);
 
     return () => 
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll, true);
     
   }, []);
 

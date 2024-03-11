@@ -13,6 +13,17 @@ import {
 
 const Home = () => {
   const [isHover, setIsHover] = useState(false);
+
+  const handleDownload = () => {
+    const fileUrl = '/SaurabhTyagiResume.pdf'; // Replace with the actual file URL
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = 'Saurabh_Tyagi_Resume.pdf'; // Replace with the desired file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="section home-section">
       <ParticlesBackground />
@@ -33,6 +44,7 @@ const Home = () => {
             <h1>MERN Stack Developer</h1>
             <div className="buttons">
               <button
+              onClick={handleDownload}
                 onMouseEnter={() => setIsHover("true")}
                 onMouseLeave={() => setIsHover(false)}
               >

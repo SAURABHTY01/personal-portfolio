@@ -190,6 +190,19 @@
   }
 }
 
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 10px #ff6868, 0 0 20px #ff6868, 0 0 30px #ff6868,
+      0 0 40px #ff6868, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+
+  to {
+    box-shadow: 0 0 20px #ff8686, 0 0 30px #ff8686, 0 0 40px #ff8686,
+      0 0 50px #ff8686, 0 0 60px #ff8686, 0 0 70px #ff8686, 0 0 80px #ff8686,
+      inset 0 0 90px #ff8686;
+  }
+}
+
 @media only screen and (min-width: 801px) and (max-width: 1024px) {
   .home-section {
     width: 100%;
@@ -455,18 +468,7 @@
     100% { box-shadow:0 0 8px #FF6868, inset 0 0 8px #FF6868; }
   } */
 
-@keyframes pulse {
-  from {
-    box-shadow: 0 0 10px #ff6868, 0 0 20px #ff6868, 0 0 30px #ff6868,
-      0 0 40px #ff6868, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
-  }
 
-  to {
-    box-shadow: 0 0 20px #ff8686, 0 0 30px #ff8686, 0 0 40px #ff8686,
-      0 0 50px #ff8686, 0 0 60px #ff8686, 0 0 70px #ff8686, 0 0 80px #ff8686,
-      inset 0 0 90px #ff8686;
-  }
-}
 
 .profile-image {
   display: flex;
@@ -476,7 +478,7 @@
 }
 
 .profile-image img {
-  width: auto;
+  width: 300px;
   height: auto;
   background: linear-gradient(#f07099, #fe9176);
   border-radius: 50%;
