@@ -10,19 +10,24 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       console.log(window.scrollY);
-      if (window.scrollY >= TOP_OFFSET) {
-        setShowBackground(true);
-      } else {
-        setShowBackground(false);
-      }
+      
+        // Your code that uses window object
+        if (window.scrollY >= TOP_OFFSET) {
+          setShowBackground(true);
+        } else {
+          setShowBackground(false);
+        }
+    
+      
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
+    return () => 
       window.removeEventListener("scroll", handleScroll);
-    };
+    
   }, []);
+
   return (
     <nav className={`navbar ${showBackground ? 'navbar-onscroll' : ''}`}>
       <ul className="nav-list">

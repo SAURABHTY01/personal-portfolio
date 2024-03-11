@@ -46,11 +46,12 @@
 }
 
 .content {
-  width: 70%;
+  margin: 0 2.5rem;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .profile-content {
@@ -147,7 +148,6 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: background 0.5s ease-in-out;
 } */
 
 .social-icons .fa-brands:hover:nth-child(3) {
@@ -190,7 +190,85 @@
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  .home-section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .home-content {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-content {
+    width: 100%;
+    margin-top: 3.5rem;
+  }
+
+  .profile-content h1 {
+    font-size: 2rem;
+  }
+
+  /* .social-icons {
+    margin-bottom: 4rem;
+    margin-left: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2.5rem;
+  } */
+
+  .profile-image {
+    width: 40%;
+    order: -1; /* Move the profile image to the top */
+  }
+
+  .profile-content .buttons {
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .buttons button {
+    width: 40%; /* Make buttons full width on tablets */
+  }
+
+  .about {
+    padding: 3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .exp-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical-timeline {
+    padding: 0 !important;
+    margin: 0 40px !important;
+  }
+
+  .timeline {
+    padding: 0;
+    margin: 0 10px !important;
+    max-width: 650px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .home-section {
     width: 100%;
     flex-direction: column;
@@ -238,7 +316,7 @@
   }
 
   .buttons button {
-    width: 40%; /* Make buttons full width on tablets */
+    width: 30%; /* Make buttons full width on tablets */
   }
 
   .about {
@@ -292,7 +370,6 @@
   }
 
   .profile-content h2 {
-    
     width: 100%;
   }
 
@@ -399,7 +476,7 @@
 }
 
 .profile-image img {
-  width: 400px;
+  width: auto;
   height: auto;
   background: linear-gradient(#f07099, #fe9176);
   border-radius: 50%;

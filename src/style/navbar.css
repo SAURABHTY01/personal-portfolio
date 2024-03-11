@@ -63,8 +63,17 @@
   z-index: 1 !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .navbar {
-    left: 50%;
+    width: 80%;
+  }
+
+  .nav-item {
+    width: 18%;
+    padding: 10px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
   }
 }
