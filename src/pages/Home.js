@@ -19,10 +19,10 @@ const Home = () => {
       <div className="home-content">
         <div className="social-icons">
           <FaFacebookF className="fa-brands" />
+          <FaInstagram className="fa-brands" />
           <FaLinkedinIn className="fa-brands" />
           <FaXTwitter className="fa-brands" />
           <FaGithub className="fa-brands" />
-          <FaInstagram className="fa-brands" />
         </div>
         <div className="content">
           <div className="profile-content">
