@@ -363,7 +363,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding-top: 8rem;
+    padding-top: 25rem;
   }
   .home-content {
     flex-direction: column-reverse;
@@ -421,6 +421,7 @@
   .exp-section {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   .vertical-timeline {
@@ -438,33 +439,7 @@
 }
 
 /* Mobile Media Query */
-@media only screen and (max-width: 799px) {
-  .home-content {
-    padding: 2rem;
-  }
 
-  .social-icons {
-    margin-top: 1.5rem;
-  }
-
-  .buttons button {
-    font-size: 0.9rem; /* Adjust button font size for better fit on smaller screens */
-  }
-
-  .profile-image {
-    order: -1; /* Move the profile image to the top */
-  }
-
-  .profile-image img {
-    width: 250px; /* Adjust the width for better responsiveness */
-    height: 250px; /* Adjust the height for better responsiveness */
-    object-fit: cover;
-  }
-
-  .exp-section {
-    overflow-x: hidden;
-  }
-}
 
 /* @keyframes pulse {
     0% { box-shadow:0 0 8px #FF6868, inset 0 0 8px #FF6868; }
