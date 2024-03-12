@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 import "../style/navbar.css";
 
 const Navbar = () => {
@@ -22,67 +23,81 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       console.log(window.scrollY);
-        // Your code that uses window object
-        if (window.scrollY >= TOP_OFFSET) {
-          setShowBackground(true);
-        } else {
-          setShowBackground(false);
-        }
+      // Your code that uses window object
+      if (window.scrollY >= TOP_OFFSET) {
+        setShowBackground(true);
+      } else {
+        setShowBackground(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll, true);
 
-    return () => 
-      window.removeEventListener("scroll", handleScroll, true);
-    
+    return () => window.removeEventListener("scroll", handleScroll, true);
   }, []);
 
   return (
-    <nav className={`navbar ${showBackground ? 'navbar-onscroll' : ''}`}>
+    <nav className={`navbar ${showBackground ? "navbar-onscroll" : ""}`}>
       <div className="menu-icon" onClick={toggleMenu}>
         {showMenu ? <FaTimes /> : <FaBarsStaggered />}
       </div>
-      <ul className={`nav-list ${showMenu ? 'show' : ''}`}>
+      <ul className={`nav-list ${showMenu ? "show" : ""}`}>
         <li className={`nav-item ${navItem === "home" ? "active" : ""}`}>
-          <a href="/" className="nav-link" onClick={() => handleNavItemClick("home")}>
+          <Link
+            href="home"
+            className="nav-link"
+            onClick={() => handleNavItemClick("home")}
+            activeClass="active"
+            smooth
+            spy
+            to="home"
+          >
             Home
-          </a>
+          </Link>
         </li>
         <li className={`nav-item ${navItem === "about" ? "active" : ""}`}>
-          <a
+          <Link
             href="about"
             className="nav-link"
             onClick={() => handleNavItemClick("about")}
+            activeClass="active"
+            smooth
+            spy
+            to="about"
           >
             About
-          </a>
+          </Link>
         </li>
         <li className={`nav-item ${navItem === "experience" ? "active" : ""}`}>
-          <a
+          <Link
             href="experience"
             className="nav-link"
             onClick={() => handleNavItemClick("experience")}
+            activeClass="active"
+            smooth
+            spy
+            to="experience"
           >
             Experience
-          </a>
+          </Link>
         </li>
         <li className={`nav-item ${navItem === "projects" ? "active" : ""}`}>
-          <a
+          <Link
             href="projects"
             className="nav-link"
             onClick={() => handleNavItemClick("projects")}
           >
             Projects
-          </a>
+          </Link>
         </li>
         <li className={`nav-item ${navItem === "contact" ? "active" : ""}`}>
-          <a
+          <Link
             href="contact"
             className="nav-link"
             onClick={() => handleNavItemClick("contact")}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

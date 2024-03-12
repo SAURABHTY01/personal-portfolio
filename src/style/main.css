@@ -437,20 +437,27 @@
     overflow-x: hidden;
   }
 
+  .exp-section h1 {
+    font-size: 40px !important;
+  }
+
   .vertical-timeline {
-    padding: 0 !important;
-    margin: 0 40px !important;
+   
+      padding: 0 !important;
+      margin: 0 20px !important;
+      /* width: 69%; */
+      max-width: 372px !important;
   }
 
   .timeline {
-    padding: 0;
-    margin: 0 10px !important;
-    max-width: 650px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
+      padding: 0 !important;
+      /* margin: 0 10px !important; */
+      max-width: 650px;
+      overflow-y: scroll;
+      overflow-x: hidden;
 }
 
+}
 /* Mobile Media Query */
 
 
