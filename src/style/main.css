@@ -363,7 +363,6 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding-top: 25rem;
   }
   .home-content {
     flex-direction: column-reverse;
@@ -376,6 +375,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 5rem
   }
 
   .profile-content {
@@ -384,38 +384,51 @@
 
   .profile-content h2 {
     width: 100%;
+    font-size: 1rem;
   }
 
   .profile-content h1 {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .social-icons {
-    margin-bottom: 4rem;
     margin-left: 0;
+   margin-bottom: 2rem;
     width: 100%;
     flex-direction: row;
     justify-content: center;
-    gap: 5rem;
-    font-size: 2.5rem;
+    gap: 2rem;
+    font-size: 1.5rem;
   }
 
   .profile-image {
     order: -1;
-    width: 300px !important; /* Adjust the width for better responsiveness */
-    height: 300px !important; /* Adjust the height for better responsiveness */
+    
   }
 
   .buttons {
+    padding: 0 20px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .buttons button{
+   
     width: 100%; /* Make buttons full width on tablets */
     justify-content: center;
   }
 
   .about {
-    padding: 3rem;
     flex-direction: column;
     text-align: center;
+    margin: 20px 0;
+    gap:0;
+  }
+
+  img.pic {
+    margin: 0;
   }
 
   .exp-section {
@@ -486,7 +499,7 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  gap: 7rem;
+  /* gap: 7rem; */
 }
 
 .text {
