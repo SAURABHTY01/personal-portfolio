@@ -438,7 +438,7 @@
 }
 
 /* Mobile Media Query */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 799px) {
   .home-content {
     padding: 2rem;
   }
@@ -459,6 +459,10 @@
     width: 250px; /* Adjust the width for better responsiveness */
     height: 250px; /* Adjust the height for better responsiveness */
     object-fit: cover;
+  }
+
+  .exp-section {
+    overflow-x: hidden;
   }
 }
 
