@@ -425,6 +425,7 @@
     text-align: center;
     margin: 20px 0;
     gap:0;
+    margin-top: 7rem;
   }
 
   img.pic {
@@ -625,6 +626,15 @@ span {
 
 .custom-timeline:before {
   background-color: #d46600; /* Change this to the desired color for connecting lines */
+}
+
+.vertical-timeline-element-projects {
+  margin-top: 10px;
+}
+
+.vertical-timeline-element-content p {
+  margin: 0 !important;
+  
 }
 
 .menu-icon {

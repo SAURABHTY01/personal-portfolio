@@ -26,106 +26,86 @@ export default function Experience() {
         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
+            // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            // contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date="05/2023 – Present"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
-              Creative Director
+              Expinator Web Technologies Pvt Ltd
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
-            </p>
+            <h4 className="vertical-timeline-element-subtitle">
+              MERN STACK DEVELOPER
+            </h4>
+            <h4 className="vertical-timeline-element-location">
+              Mohali, Punjab
+            </h4>
+            <div className="vertical-timeline-element-projects">
+              <h4>Project : Butter Mobile App</h4>
+              <p>
+                • Developed rest api in backend with Geo-location in MongoDB and
+                Node JS • Developed admin dashboard for app in React JS
+              </p>
+              <h4>Project : Apparel Mockup Generation App</h4>
+              <p>• Developed mockup generation using React JS and Fabric JS</p>
+              <h4>Project : Biograin Nutritonal App</h4>
+              <p>
+                • Setup server and create restful api using Node JS and Express
+                JS • Integrate all functionality and api in frontend
+              </p>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2010 - 2011"
+            // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            // contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date="02/2023 – 05/2023"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h3 className="vertical-timeline-element-title">
+              Dipole Tech Innovations OPC Pvt Ltd
+            </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
+              SOFTWARE ENGINEER
             </h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online
-              Marketing
-            </p>
+            <h4 className="vertical-timeline-element-location">
+              Mohali, Punjab
+            </h4>
+            <div className="vertical-timeline-element-projects">
+              <h4>Project : HiHelloHr</h4>
+              <p>• Developed various reminder scheduler cron jobs in Node JS</p>
+              <h4>Project : Electron Auto Updater</h4>
+              <p>• Developed auto updater for Electron app</p>
+            </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2008 - 2010"
+            // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            // contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date="05/2021 – 11/2022"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<WorkIcon />}
           >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Los Angeles, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2006 - 2008"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              San Francisco, CA
-            </h4>
-            <p>User Experience, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="April 2013"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
             <h3 className="vertical-timeline-element-title">
-              Content Marketing for Web, Mobile and Social Media
+              Cetpa Infotech Pvt Ltd
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
-              Online Course
+              MERN STACK DEVELOPER
             </h4>
-            <p>Strategy, Social Media</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="November 2012"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Agile Development Scrum Master
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Certification
+            <h4 className="vertical-timeline-element-location">
+              Noida, Uttar Pradesh
             </h4>
-            <p>Creative Direction, User Experience, Visual Design</p>
+            <div className="vertical-timeline-element-projects">
+              <p>
+                • Design components for various projects in React JS <br/>• Design
+                database structure in MongoDB <br/>• Setup server and create restful
+                api using Node JS and Express JS <br/>• Integrate all restful api in
+                frontend
+              </p>
+            </div>
           </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--education"
-            date="2002 - 2006"
-            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-            icon={<WorkIcon />}
-          >
-            <h3 className="vertical-timeline-element-title">
-              Bachelor of Science in Interactive Digital Media Visual Imaging
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor Degree
-            </h4>
-            <p>Creative Direction, Visual Design</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-            icon={<WorkIcon />}
-          />
         </VerticalTimeline>
       </div>
     </div>
