@@ -11,7 +11,7 @@ const About = () => {
           MERN Stack Developer & <span>Designer</span>
         </h5>
         <p>
-          I'm Saurabh Tyagi, a proficient MERN Stack Developer with three years
+          {/* I'm Saurabh Tyagi, a proficient MERN Stack Developer with three years
           of hands-on experience in crafting robust and scalable web
           applications. My journey in the realm of software development began
           with a passion for problem-solving and a fascination with technology.
@@ -35,7 +35,8 @@ const About = () => {
           Beyond
           coding, I am a dedicated team player who values open communication,
           mutual respect, and continuous learning. I believe in the power of
-          teamwork to overcome challenges and achieve exceptional results.
+          teamwork to overcome challenges and achieve exceptional results. */}
+          I'm Saurabh Tyagi, a seasoned MERN Stack Developer with three years of experience crafting robust web applications. Proficient in MongoDB, Express.js, React.js, and Node.js, I thrive in collaborative environments, leveraging my dedication to excellence and continuous learning to deliver cutting-edge solutions. With a passion for problem-solving and a commitment to teamwork, I'm eager to contribute my skills to innovative projects, turning ideas into reality in the dynamic landscape of web development.
         </p>
         <div class="data">
           <a href="hire" class="hire">
