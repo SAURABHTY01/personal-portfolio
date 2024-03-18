@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import "../style/navbar.css";
 
 const Navbar = () => {
-  const TOP_OFFSET = 50;
+  const TOP_OFFSET = 100;
   const [navItem, setNavItem] = useState("home");
   const [showMenu, setShowMenu] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
