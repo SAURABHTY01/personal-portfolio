@@ -45,15 +45,17 @@ export default function Experience() {
               <h4>Project : Butter Mobile App</h4>
               <p>
                 • Developed rest api in backend with Geo-location in MongoDB and
-                Node JS • Developed admin dashboard for app in React JS
+                Node JS
               </p>
+              <p>• Developed admin dashboard for app in React JS</p>
               <h4>Project : Apparel Mockup Generation App</h4>
               <p>• Developed mockup generation using React JS and Fabric JS</p>
               <h4>Project : Biograin Nutritonal App</h4>
               <p>
                 • Setup server and create restful api using Node JS and Express
-                JS • Integrate all functionality and api in frontend
+                JS
               </p>
+              <p>• Integrate all functionality and api in frontend</p>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -77,7 +79,7 @@ export default function Experience() {
               <h4>Project : HiHelloHr</h4>
               <p>• Developed various reminder scheduler cron jobs in Node JS</p>
               <h4>Project : Electron Auto Updater</h4>
-              <p>• Developed auto updater for Electron app</p>
+              <p>• Develop electron app and integrate auto updater in app</p>
             </div>
           </VerticalTimelineElement>
           <VerticalTimelineElement

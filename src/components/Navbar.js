@@ -38,6 +38,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${showBackground ? "navbar-onscroll" : ""}`}>
+      div.
       <div className="menu-icon" onClick={toggleMenu}>
         {showMenu ? <FaTimes /> : <FaBarsStaggered />}
       </div>
