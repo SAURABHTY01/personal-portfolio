@@ -275,7 +275,7 @@
   .timeline {
     padding: 0;
     margin: 0 10px !important;
-    max-width: 650px;
+    max-width: 850px;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -425,11 +425,17 @@
     text-align: center;
     margin: 20px 0;
     gap:0;
-    margin-top: 7rem;
+    margin-top: 12rem;
+  }
+
+  .text {
+    padding: 0 20px;
   }
 
   img.pic {
     margin: 0;
+    width: 220px;
+    height: 220px
   }
 
   .exp-section {
@@ -447,13 +453,13 @@
       padding: 0 !important;
       margin: 0 20px !important;
       /* width: 69%; */
-      max-width: 372px !important;
+      max-width: 300px !important;
   }
 
   .timeline {
       padding: 0 !important;
       /* margin: 0 10px !important; */
-      max-width: 650px;
+      max-width: 350px;
       overflow-y: scroll;
       overflow-x: hidden;
 }
