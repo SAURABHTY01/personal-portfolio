@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   return (
-    <div className="section home-section" id='home'>
+    <section className="section home-section" id='home'>
       <ParticlesBackground />
       <div className="home-content">
         <div className="social-icons">
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

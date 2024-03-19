@@ -21,9 +21,31 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // const handleScroll = () => {
+    //   console.log(window.scrollY);
+    //   // Your code that uses window object
+    //   if (window.scrollY >= TOP_OFFSET) {
+    //     setShowBackground(true);
+    //   } else {
+    //     setShowBackground(false);
+    //   }
+    // };
+
+    // window.addEventListener("scroll", handleScroll, true);
+
+    // return () => window.removeEventListener("scroll", handleScroll, true);
     const handleScroll = () => {
-      console.log(window.scrollY);
-      // Your code that uses window object
+      const sections = document.querySelectorAll("section");
+      
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - TOP_OFFSET;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+          setNavItem(section.getAttribute("id"));
+        }
+      });
+
       if (window.scrollY >= TOP_OFFSET) {
         setShowBackground(true);
       } else {
@@ -91,6 +113,10 @@ const Navbar = () => {
             href="projects"
             className="nav-link"
             onClick={() => handleNavItemClick("projects")}
+            activeClass="active"
+            smooth
+            spy
+            to="projects"
           >
             Projects
           </Link>

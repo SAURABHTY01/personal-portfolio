@@ -8,7 +8,7 @@ const WorkIcon = () => <></>;
 
 export default function Experience() {
   return (
-    <div className="section exp-section" id="experience">
+    <section className="section exp-section" id="experience">
       <h1>Experience</h1>
       <div
         className="timeline"
@@ -110,6 +110,6 @@ export default function Experience() {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-    </div>
+    </section>
   );
 }
