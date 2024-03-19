@@ -38,9 +38,13 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${showBackground ? "navbar-onscroll" : ""}`}>
-      div.
-      <div className="menu-icon" onClick={toggleMenu}>
-        {showMenu ? <FaTimes /> : <FaBarsStaggered />}
+      <div className="nav">
+        <div className={`nav-title`}>
+          <h2>Portfolio</h2>
+        </div>
+        <div className="menu-icon" onClick={toggleMenu}>
+          {showMenu ? <FaTimes /> : <FaBarsStaggered />}
+        </div>
       </div>
       <ul className={`nav-list ${showMenu ? "show" : ""}`}>
         <li className={`nav-item ${navItem === "home" ? "active" : ""}`}>
