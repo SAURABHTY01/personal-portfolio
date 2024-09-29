@@ -648,7 +648,7 @@ span {
   
 }
 
-span .vertical-timeline-element-icon.bounce- {
+span.vertical-timeline-element-icon.bounce- {
   background: rgb(255 104 104) !important;
     color: rgb(255, 255, 255);
 }
