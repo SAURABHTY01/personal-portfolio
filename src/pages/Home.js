@@ -44,7 +44,7 @@ const Home = () => {
             <h1>MERN Stack Developer</h1>
             <div className="buttons">
               <button
-              onClick={handleDownload}
+                onClick={handleDownload}
                 onMouseEnter={() => setIsHover("true")}
                 onMouseLeave={() => setIsHover(false)}
               >
@@ -62,8 +62,8 @@ const Home = () => {
             </div>
           </div>
           <div className="profile-image">
-          <img src={ProfilePic} alt="" srcset="" />
-        </div>
+            <img src={ProfilePic} alt="" srcset="" />
+          </div>
         </div>
       </div>
     </section>

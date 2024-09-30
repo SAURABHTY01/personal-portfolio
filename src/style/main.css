@@ -199,7 +199,7 @@
   to {
     box-shadow: 0 0 20px #ff8686, 0 0 30px #ff8686, 0 0 40px #ff8686,
       0 0 50px #ff8686, 0 0 60px #ff8686, 0 0 70px #ff8686, 0 0 80px #ff8686,
-      inset 0 0 90px #ff8686;
+      inset 0 0 20px #ff8686;
   }
 }
 
@@ -489,12 +489,12 @@
 .profile-image img {
   width: 300px;
   height: auto;
-  background: linear-gradient(#f07099, #541bf1);
+  background: #001220;
   border-radius: 50%;
   box-shadow: 0 0 15px #ff6868, inset 0 0 15px #ff6868;
   position: relative;
   overflow: hidden;
-  animation: pulse 2s ease-in-out infinite alternate;
+  animation: pulse 2s ease-out infinite alternate;
   object-fit: contain;
 }
 
