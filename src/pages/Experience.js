@@ -26,9 +26,35 @@ export default function Experience() {
         >
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            // contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="05/2023 – Present"
+            date="May/2023 – Mar/2024"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Quantum System (India)
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Senior Software Engineer
+            </h4>
+            <h4 className="vertical-timeline-element-location">
+              Mohali, Punjab
+            </h4>
+            <div className="vertical-timeline-element-projects">
+              <h4>Project : Food Processing Skills Canada</h4>
+              <p>
+                • Developed and implemented frontend features like Joyride tour, English to French translation using react-i18next, translation file upload mechanism for frontend & backend and API.
+              </p>
+              <p>• Developed and implemented the subscription plan architecture, plan features and developed and integrated Stripe APIs for payment processing.</p>
+              <p>• Developed and implemented RESTful APIs for different data comparison for users to analyze and compare data using Highcharts.</p>
+              <p>• Integrate Highcharts to display dynamic and interactive data visualizations on the frontend.</p>
+              <h4>Project : Grand Pre Wine-Distillery</h4>
+              <p>• Update existing CRUD APIs for Wine Composition, Process, Batch, and Blending functionalities.</p>
+              
+            </div>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="May/2023 – Mar/2024"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<WorkIcon />}
           >
