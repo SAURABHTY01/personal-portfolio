@@ -1,0 +1,66 @@
+.date-range-picker {
+    position: relative;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  input {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .calendar {
+    position: absolute;
+    top: 50px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .month-header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dates-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .date-cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .date-cell:hover {
+    background: lightgray;
+  }
+  
+  .selected {
+    background: purple;
+    color: white;
+  }
+  
+  .in-range {
+    background: rgba(128, 0, 128, 0.3);
+  }
+  
