@@ -9,7 +9,6 @@ import DateRangePicker from "./components/DateRangePicker";
 function App() {
   return (
     <div className="main">
-      {/* <DateRangePicker/> */}
       <Navbar />
       <Home />
       <About />

@@ -45,7 +45,7 @@ const Home = () => {
             <div className="buttons">
               <button
                 onClick={handleDownload}
-                onMouseEnter={() => setIsHover("true")}
+                onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
               >
                 {isHover ? (
